@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WJP Pump Track</title>
+
+<style>
+:root {
+  --bg: #f9f8f6;
+  --accent: #ECA23F;
+  --text: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  z-index: 1000;
+    background:white;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:white;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+.logo img{
+    max-width:250px;
+    margin-bottom:-6px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 4rem 2rem;
+}
+
+.section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: var(--accent);
+}
+.site-plan{
+    max-width:1080px;
+    width:100%;
+    border-radius:6px;
+    margin-top:18px;
+}
+
+/* ---------- Gallery ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ---------- Donate ---------- */
+.donate-box {
+  background: #fff;
+  padding: 2rem;
+  border-left: 6px solid var(--accent);
+  border-radius: 8px;
+}
+
+/* ---------- Contact Form ---------- */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+    .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+    header {
+    position: static;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo"><img src="pump-track-eug-logo.jpg"></div>
+    <nav>
+      <ul>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#supporters">Supporters</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Section 1: Concept -->
+<section id="concept">
+  <div class="section-inner">
+    <h2>The <span class="highlight">Concept</span></h2>
+    <p>
+      The WJ Pump Track is a community-driven project designed to create a
+      safe, inclusive space for riders of all ages and skill levels.
+      Built for bikes, boards, and movement, the track will serve as a hub
+      for connection, growth, and outdoor fun.
+    </p>
+      <img class="site-plan" src="site-plan.jpg">
+  </div>
+</section>
+
+<!-- Section 2: Supporters -->
+<section id="supporters">
+  <div class="section-inner">
+    <h2>Our <span class="highlight">Supporters</span></h2>
+    <p>
+      This project is made possible by local organizations, volunteers,
+      families, and donors who believe in accessible outdoor recreation.
+    </p>
+    <ul>
+      <li>Community Members</li>
+      <li>Local Businesses</li>
+      <li>Nonprofit Partners</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Section 3: What is a Pumptrack? -->
+<section id="gallery">
+  <div class="section-inner">
+    <h2>What is a <span class="highlight">Pump Track?</span></h2>
+    <p>
+      A pumptrack is an all-weather asphalt-surfaced bike track, designed in a circular way that allows the rider to pump and corner their way around a space without pedaling. It incorporates “rollers” and “berms” that help riders generate speed by pumping. Pumptracks can include things like optional jumps, differing roller shapes, and features such as wall rides, to give the riders options to ride the track in different ways. 
+<br>
+While designed around bicycles, pump tracks can be enjoyed by many user groups. Skateboards, scooters, roller blades, and even adaptive devices such as three wheeled bikes are all usable on pumptracks. By including both a beginner pumptrack and full size pumptrack, the park concept could be enjoyed by a wide variety of users from kids on push bikes to adults training to level up their skills. Providing a progression-based design will keep visitors engaged and excited across skill and ability levels. Pump tracks build community, build confidence, and are inclusive by design.
+<br>
+Beyond providing recreation for the local community, pumptracks are often sought out by passionate riders. Much like the skatepark nearby, users often will travel to visit these facilities. By creating a facility that appeals to a broad user base, the park will encourage tourism to the downtown area, supporting both local businesses and culture.
+    </p>
+    <h3>Photo examples of popular pumptracks:</h3>
+    <div class="gallery">
+      <img src="ex1.jpg" alt="">
+      <img src="ex2.jpg" alt="">
+      <img src="ex3.jpg" alt="">
+      <img src="ex4.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Donate -->
+<section id="donate">
+  <div class="section-inner">
+    <h2>Support the <span class="highlight">Build</span></h2>
+
+    <div class="donate-box">
+      <p>
+        Your donation helps fund materials, construction, and long-term
+        maintenance of the pump track.
+      </p>
+      <p>
+        <strong>Every contribution makes a difference.</strong>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Contact -->
+<section id="contact">
+  <div class="section-inner">
+    <h2>Get in <span class="highlight">Touch</span></h2>
+
+    <form action="mailto:info@wjpumptack.org" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 WJ Pump Track • Community Built
+</footer>
+
+</body>
+</html>
